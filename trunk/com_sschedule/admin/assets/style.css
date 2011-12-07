@@ -1,0 +1,9 @@
+.letter {
+    border:1px solid silver; 
+    padding: 2px 7px;
+    margin: 2px 1px; 
+    background-color:#FFFFFF
+}
+/* icona */
+.icon-48-logo { background-image:url(logo.png);}
+#mylogo { background:url(big-logo.png) #FFFFFF no-repeat; width: 450px; height: 210px;}

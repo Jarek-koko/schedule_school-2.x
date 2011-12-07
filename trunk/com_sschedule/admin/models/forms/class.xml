@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details">
+		
+		<field
+			name="name"
+			type="text"
+			label="COM_SSCHEDULE_CLASS_FIELD_NAME_LABEL"
+			size="50"
+			class="inputbox"
+			required="true"
+			default=""
+		/>
+               
+		<field
+			name="published"
+			type="list"
+			label="COM_SSCHEDULE_CLASS_FIELD_STATE_LABEL"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option
+				value="1">JPUBLISHED</option>
+			<option
+				value="0">JUNPUBLISHED</option>
+			
+		</field>
+                 <field
+                        label="COM_SSCHEDULE_CLASS_FIELD_MODIFIED_LABEL"
+			name="modified"
+			readonly="true" 
+                        class="readonly"
+		/>
+                <field
+                        label="COM_SSCHEDULE_CLASS_FIELD_ID_LABEL"
+			name="id"
+			readonly="true" 
+                        class="readonly"
+		/>
+                
+                <field name="description" type="editor" buttons="true" hide="pagebreak,readmore"
+			class="inputbox"
+			filter="safehtml"
+			label="COM_SSCHEDULE_CLASS_FIELD_DESCRIPTION" 
+                />
+	</fieldset>
+</form>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">            
+           <field 
+                   name="classroomid" 
+                   type="sql" 
+                   label="COM_SSCHEDULE_SCHEDULE_FIELD_CLASSROOMS_LABEL" 
+                   query="SELECT id, name FROM #__sschedule_classrooms where published=1" 
+                   key_field="id" 
+                   value_field="name" 
+           />
+
+           <field 
+                   name="teacherid" 
+                   type="sql"                      
+                   label="COM_SSCHEDULE_SCHEDULE_FIELD_TEACHERS_LABEL" 
+                   query="SELECT id, name FROM #__sschedule_teachers where published=1" 
+                   key_field="id" 
+                   value_field="name" 
+           />
+
+            <field 
+                   name="classid" 
+                   type="sql" 
+                   label="COM_SSCHEDULE_SCHEDULE_FIELD_CLASSES_LABEL" 
+                   query="SELECT id, name FROM #__sschedule_classes where published=1" 
+                   key_field="id" 
+                   value_field="name" 
+           />
+
+            <field 
+                   name="lessonid" 
+                   type="sql" 
+                   label="COM_SSCHEDULE_SCHEDULE_FIELD_LESSONS_LABEL" 
+                   query="SELECT id, name FROM #__sschedule_lessons where published=1" 
+                   key_field="id" 
+                   value_field="name" 
+           />
+
+            <field 
+                   name="timeid" 
+                   type="sql"
+                   label="COM_SSCHEDULE_SCHEDULE_FIELD_TIMES_LABEL" 
+                   query="SELECT id, name FROM #__sschedule_times where published=1" 
+                   key_field="id" 
+                   value_field="name" 
+           />
+
+           <field
+                    label="COM_SSCHEDULE_SCHEDULE_FIELD_DAY_LABEL"
+                    name="day"
+                    type="days"
+           />
+
+            <field
+                    name="published"
+                    type="list"
+                    label="COM_SSCHEDULE_SCHEDULE_FIELD_STATE_LABEL"
+                    class="inputbox"
+                    size="1"
+                    default="1"
+             >
+                    <option
+                            value="1">JPUBLISHED</option>
+                    <option
+                            value="0">JUNPUBLISHED</option>
+
+            </field>
+
+            <field
+                    label="COM_SSCHEDULE_SCHEDULE_FIELD_MODIFIED_LABEL"
+                    name="modified"
+                    readonly="true" 
+                    class="readonly"
+            />
+
+            <field
+                    label="COM_SSCHEDULE_SCHEDULE_FIELD_ID_LABEL"
+                    name="id"
+                    readonly="true" 
+                    class="readonly"
+            />
+            
+            <field name="checked_out" type="hidden" filter="unset" />
+	    <field name="checked_out_time" type="hidden" filter="unset" />
+    </fieldset>
+</form>
+

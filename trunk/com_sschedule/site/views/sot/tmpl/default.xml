@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_SSCHEDULE_SOT_VIEW_DEFAULT_TITLE">
+        <message>
+	    COM_SSCHEDULE_SOT_VIEW_DEFAULT_DESC
+        </message>
+    </layout>
+    <fields name="params" addfieldpath="/administrator/components/com_sschedule/models/fields">
+        <fieldset name="sot" label="COM_SSCHEDULE_SOT_FIELDSET_LABEL">
+            <field name="titlehead" 
+               type="text" 
+               default="Schedule of teacher" 
+               label="COM_SSCHEDULE_TITLE_LABEL" 
+               description="COM_SSCHEDULE_TITLE_DESC" 
+               size="40" />
+          <field 
+                name="teacherid" 
+                type="sql" 
+                default="" 
+                label="COM_SSCHEDULE_SOT_SELECT_TEACHER_LABEL" 
+                description="COM_SSCHEDULE_SOT_SELECT_TEACHER_DESC" 
+                query="SELECT id , name  FROM #__sschedule_teachers order by name" 
+                key_field="id" value_field="name" 
+            />
+          <field
+                label="COM_SSCHEDULE_SOT_DAY_LABEL"
+                description="COM_SSCHEDULE_SOT_DAY_DESC"
+                name="dayid"
+                type="days"
+           />
+           <field 
+                    name="scl" 
+                    type="radio" 
+                    default="0" 
+                    label="COM_SSCHEDULE_SOT_SCL_LABEL" 
+                    description="COM_SSCHEDULE_SOT_SCL_DESC" 
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            <field 
+                    name="scr" 
+                    type="radio" 
+                    default="0" 
+                    label="COM_SSCHEDULE_SOT_SCR_LABEL" 
+                    description="COM_SSCHEDULE_SOT_SCR_DESC" 
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+           
+        </fieldset>
+    </fields>
+</metadata>
