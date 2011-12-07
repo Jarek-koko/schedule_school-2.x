@@ -1,13 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!--
-    Document   : mod_dayschool.xml
-    Created on : 29 listopad 2011, 14:33
-    Author     : koko
-    Description:
-        Purpose of the document follows.
--->
-
-<root>
-
-</root>
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7.0" client="site" method="upgrade">
+    <name>DaySchool</name>
+    <author>Klich Jarosław</author>
+    <creationDate>Nov 2011</creationDate>
+    <copyright>Klich Jarosław</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>Jarek.koko+Sschedule@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.0.0</version>
+    <description>Schedule modul</description>
+    <files>
+        <filename module="mod_dayschool">mod_dayschool.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>mod_dayschool.xml</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_dayschool.ini</language>
+    </languages>
+  <config>
+      <fields name="params" addfieldpath="/administrator/components/com_sschedule/models/fields">
+         <fieldset name="basic">
+            </fieldset>
+           <fieldset name="advanced">
+                <field
+                name="layout"
+                type="modulelayout"
+                label="JFIELD_ALT_LAYOUT_LABEL"
+                description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field
+                name="moduleclass_sfx"
+                type="text"
+                label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

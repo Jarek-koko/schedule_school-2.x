@@ -33,11 +33,14 @@
         <folder>views</folder>
         <folder>models</folder>
         <folder>language</folder>
+        <folder>helpers</folder>
     </files>
     
     <media destination="com_sschedule" folder="media">
         <filename>index.html</filename>
+        <folder>css</folder>
         <folder>images</folder>
+        <folder>js</folder>
     </media>
     <administration>
 		<!-- Administration Menu Section -->

@@ -23,7 +23,7 @@ abstract class SscheduleHelperDay {
             '3' => array('value' => '4', 'text' => JText::_('COM_SSCHEDULE_THURS')),
             '4' => array('value' => '5', 'text' => JText::_('COM_SSCHEDULE_FRI')),
             '5' => array('value' => '6', 'text' => JText::_('COM_SSCHEDULE_SAT')),
-            '6' => array('value' => '7', 'text' => JText::_('COM_SSCHEDULE_SUN'))
+            '6' => array('value' => '0', 'text' => JText::_('COM_SSCHEDULE_SUN'))
         );
         return $day;
     }
@@ -49,7 +49,7 @@ abstract class SscheduleHelperDay {
             case 6:
                 $tmp = JText::_('COM_SSCHEDULE_SAT');
                 break;
-            case 7:
+            case 0:
                 $tmp = JText::_('COM_SSCHEDULE_SUN');
                 break;
             default:

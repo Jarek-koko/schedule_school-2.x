@@ -82,5 +82,44 @@ class SscheduleModelSoclist extends JModelList {
         $this->setState('sschedule.st', $st);
         $this->setState('params', $params);
     }
+    
+    public function getJson() {
+       
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $query->from('#__sschedule AS l');
+        
+        // Join over the time
+        $query->select('b.name AS time');
+        $query->join('LEFT', '`#__sschedule_times` AS b ON b.id = l.timeid');
+        // Join over the lesson
+        $query->select('le.name AS lesson');
+        $query->join('LEFT', '`#__sschedule_lessons` AS le ON le.id = l.lessonid');
+
+        $classid = $this->getState('sschedule.classid');
+        $dayid = $this->getState('sschedule.dayid');
+        $params = $this->getState('params');
+        
+        $classid = (int) JRequest::getVar('classid', 0, '', 'int');
+        $dayid = (int) JRequest::getVar('dayid', 0, '', 'int');
+               
+        if($params->get('order_num', 0)){
+           $query->order('b.name');
+        } else {
+           $query->order('b.ordering');
+        }
+       
+        if (is_numeric($classid)) {
+            $query->where('l.classid = ' . (int) $classid);
+        }
+
+        if (is_numeric($dayid)) {
+            $query->where('l.day = ' . (int) $dayid);
+        }        
+        $db->setQuery($query, 0, 0);
+        $list = $db->loadObjectList();
+        
+        return $list;
+    }
 
 }
