@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7.0" method="upgrade">
+    <name>COM_SSHEDULE</name>
+    <creationDate>November 2011</creationDate>
+    <author>Klich Jarosław</author>
+    <authorEmail>Jarek.koko+Sschedule@gmail.com</authorEmail>
+    <authorUrl>http://jarek.yum.pl</authorUrl>
+    <copyright>Klich Jarosław</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>0.0.95</version>
+    <description>Schedule School</description>
+    <scriptfile>script.php</scriptfile>
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update> <!-- Runs on update; New in 1.6 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+	<!-- Site Main File Copy Section -->
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>sschedule.php</filename>
+        <filename>controller.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>language</folder>
+    </files>
+    
+    <media destination="com_sschedule" folder="media">
+        <filename>index.html</filename>
+        <folder>images</folder>
+    </media>
+    <administration>
+		<!-- Administration Menu Section -->
+        <menu img="components/com_sschedule/assets/icon-16-menu-sscheulder.png">COM_SSCHEDULE_MENU</menu>
+		<!-- Administration Main File Copy Section -->
+        <files folder="admin">
+		<!-- Admin Main File Copy Section -->
+            <filename>index.html</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <filename>sschedule.php</filename>
+            <filename>controller.php</filename>		
+            <folder>sql</folder>
+            <folder>assets</folder>
+            <folder>tables</folder>			
+            <folder>models</folder>			
+            <folder>views</folder>			
+            <folder>controllers</folder>		
+            <folder>helpers</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB.com_sschedule.ini</language>
+            <language tag="en-GB">language/en-GB.com_sschedule.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
+

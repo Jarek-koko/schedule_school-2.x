@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_SSCHEDULE_TEACHERS_VIEW_DEFAULT_TITLE">
+        <message>
+	  COM_SSCHEDULE_TEACHERS_VIEW_DEFAULT_DESC
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset name="teachers" label="COM_SSCHEDULE_TEACHERS_FIELDSET_LABEL">
+            <field 
+                name="show_links" 
+                type="radio" 
+                default="0" 
+                label="COM_SSCHEDULE_TEACHERS_SHOW_LINKS" 
+                description="COM_SSCHEDULE_TEACHERS_SHOW_LINKS_DESC"
+            >
+                <option value="0">JYES</option>
+                <option value="1">JNO</option>
+            </field>
+           <field name="titlehead" 
+               type="text" 
+               default="Teachers" 
+               label="COM_SSCHEDULE_TITLE_LABEL" 
+               description="COM_SSCHEDULE_TITLE_DESC" 
+               size="40" />
+        </fieldset>
+    </fields>
+</metadata>

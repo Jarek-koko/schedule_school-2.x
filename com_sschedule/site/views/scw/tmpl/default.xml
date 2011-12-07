@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_SSCHEDULE_SCW_VIEW_DEFAULT_TITLE">
+        <message>
+	    COM_SSCHEDULE_SCW_VIEW_DEFAULT_DESC
+        </message>
+    </layout>
+    <fields name="params" addfieldpath="/administrator/components/com_sschedule/models/fields">
+        <fieldset name="scw" label="COM_SSCHEDULE_SCW_FIELDSET_LABEL" >
+             <field name="titlehead" 
+               type="text" 
+               default="Class 1" 
+               label="COM_SSCHEDULE_TITLE_LABEL" 
+               description="COM_SSCHEDULE_TITLE_DESC" 
+               size="40" />
+          <field 
+                name="classid" 
+                type="sql" 
+                default="" 
+                label="COM_SSCHEDULE_SCW_SELECT_CLASS_LABEL" 
+                description="COM_SSCHEDULE_SCW_SELECT_CLASS_DESC" 
+                query="SELECT id , name  FROM #__sschedule_classes order by name" 
+                key_field="id" value_field="name" 
+            />
+           <field 
+                    name="st" 
+                    type="radio" 
+                    default="0" 
+                    label="COM_SSCHEDULE_SCW_ST_LABEL" 
+                    description="COM_SSCHEDULE_SCW_ST_DESC" 
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            <field 
+                    name="sc" 
+                    type="radio" 
+                    default="0" 
+                    label="COM_SSCHEDULE_SCW_SC_LABEL" 
+                    description="COM_SSCHEDULE_SCW_SC_DESC" 
+            >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+           
+        </fieldset>
+    </fields>
+</metadata>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_SSCHEDULE_CLASSROOMS_VIEW_DEFAULT_TITLE">
+        <message>
+	  COM_SSCHEDULE_CLASSROOMS_VIEW_DEFAULT_DESC
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset name="classrooms" label="COM_SSCHEDULE_CLASSROOMS_FIELDSET_LABEL">
+           <field name="titlehead" 
+               type="text" 
+               default="Classrooms" 
+               label="COM_SSCHEDULE_TITLE_LABEL" 
+               description="COM_SSCHEDULE_TITLE_DESC" 
+               size="40" />
+        </fieldset>
+    </fields>
+</metadata>
