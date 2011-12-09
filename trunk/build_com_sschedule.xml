@@ -2,7 +2,8 @@
 <project name="sschedule" default="all" basedir=".">
     <import file="common.xml"/>
     <target name="all" depends="build,sync,package"/>
-    
+     
+    <!-- create package zip -->
     <target name="package">
         <antcall target="_package">
             <param name="NAME" value="com_sschedule"/>
@@ -11,7 +12,7 @@
             <param name="NAME" value="mod_dayschool"/>
         </antcall>
     </target>
-    
+    <!-- build structure for package in tmp  -->
     <target name="build">
         <antcall target="buildcomponent">
             <param name="NAME" value="com_sschedule"/>
@@ -22,7 +23,7 @@
             <param name="PREFIX" value=""/>
         </antcall>
     </target>
-    
+     <!-- synchronization between folders tmp and realasedir -->
     <target name="sync">
         <antcall target="_sync">
             <param name="NAME" value="com_sschedule"/>
