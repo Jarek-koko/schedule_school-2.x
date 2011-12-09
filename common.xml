@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <property environment="env"/>
+    <!-- sourcedir == D:\wamp\www -->
     <property name="source"	value="${env.SOURCEDIR}\joomla16" />
+    <!-- releasedir == F:\webmaster\05_joomla_dev\myextension -->
     <property name="release" 	value="${env.RELEASEDIR}\sschedule\Releases" />
+    <!-- builddir == C:\Windows\Temp -->
     <property name="builddir" 	value="${env.BUILDDIR}"/>
-    <property name="verbose" 	value="false"/>
+    <property name="verbose" 	value="true"/>
     <tstamp>
         <format property="NOW" pattern="yyyyMMdd"/>
     </tstamp>
@@ -52,14 +55,11 @@
     <target name="buildcomponent" depends="_clean">
         <mkdir dir="${builddir}/${NAME}/site"/>
         <mkdir dir="${builddir}/${NAME}/admin"/>
-        <mkdir dir="${builddir}/${NAME}/admin/sql"/>
+        <mkdir dir="${builddir}/${NAME}/media"/>
 
         <copy todir="${builddir}/${NAME}/admin" overwrite="true" verbose="${verbose}">
             <fileset dir="${source}/administrator/components/${NAME}"/>
         </copy>
-         <copy todir="${builddir}/${NAME}/media" overwrite="true" verbose="${verbose}"  failonerror="false">
-            <fileset dir="${source}/media/${NAME}"/>
-         </copy>
         <copy todir="${builddir}/${NAME}/admin/language" overwrite="true" verbose="${verbose}" flatten="true">
             <fileset dir="${source}/administrator/language">
                 <exclude name="overrides/*"/>
@@ -67,15 +67,11 @@
                 <include name="**/*${NAME}*.ini"/>
             </fileset>
         </copy>
+         <copy todir="${builddir}/${NAME}/media" overwrite="true" verbose="${verbose}"  failonerror="false">
+            <fileset dir="${source}/media/${NAME}"/>
+         </copy>
         <copy todir="${builddir}/${NAME}/site" overwrite="true" verbose="${verbose}">
             <fileset dir="${source}/components/${NAME}"/>
-        </copy>
-        <copy todir="${builddir}/${NAME}/site/language" overwrite="true" verbose="${verbose}" flatten="true">
-            <fileset dir="${source}/language">
-                <exclude name="overrides/*"/>
-                <exclude name="pdf_fonts/*"/>
-                <include name="**/*${NAME}*.ini" />
-            </fileset>
         </copy>
         <move file="${builddir}/${NAME}/admin/sschedule.xml" todir="${builddir}/${NAME}" verbose="${verbose}"/>
         <move file="${builddir}/${NAME}/admin/script.php" todir="${builddir}/${NAME}" verbose="${verbose}" />
