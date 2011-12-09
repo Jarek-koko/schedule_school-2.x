@@ -1,0 +1,288 @@
+.clr {clear:both;}
+
+#teachers .teachers_box {float: left; margin: 10px 5px; background-color: #CAE6E9; border: 1px solid #C1DAD7; padding:10px;}
+#teachers .teachers_box a {text-decoration: none;}
+#teachers .teachers_box a img {border:1px solid #FFF}
+#teachers .teachers_box a:hover, .teachers_boxa:active, .teachers_box a:focus {background-color: transparent;}
+#teachers .teachers_box p {color:#4F6B72}
+
+#teacher .teacher_box img {float:left; margin: 5px;}
+#teacher .teacher_box .dsc {float:right; margin:5px; width: 80%}
+
+#classrooms .classrooms_box 
+{
+    float: left; margin:10px 5px;
+    border: 1px solid  #C1DAD7; 
+    padding:0px;
+    border-radius: 5px 5px 5px 5px; 
+    background: -moz-linear-gradient(center top , #D6F0F1, #CAE6E9) repeat scroll 0 0 #EFEFEF;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D6F0F1), to(#CAE6E9));
+    background: -ms-linear-gradient(top, #D6F0F1, #CAE6E9)repeat scroll 0 0 #333;
+    background: -o-linear-gradient(top, #D6F0F1, #CAE6E9) repeat scroll 0 0 #333;
+    background: -webkit-linear-gradient(top, #D6F0F1, #CAE6E9);
+    background: linear-gradient(top, #D6F0F1, #CAE6E9);
+}
+#classrooms .classrooms_box a {color: #4F6B72; text-decoration:none; display: block; padding:15px; font: bold 11px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;text-transform: uppercase;}
+#classrooms .classrooms_box a:hover, .classrooms_boxa:active, .classrooms_box a:focus {background-color: transparent; color: #999999}
+#classrooms .classrooms_box p {color:#B36B00}
+
+#classroom .classroom_box .dsc {margin:5px; width: 80%}
+
+#classes .classes_box 
+{
+    float: left; margin: 10px 5px; 
+    border: 1px solid #C1DAD7; 
+    padding:0px;
+    border-radius: 5px 5px 5px 5px; 
+    background: -moz-linear-gradient(center top , #D6F0F1, #CAE6E9) repeat scroll 0 0 #EFEFEF;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D6F0F1), to(#CAE6E9));
+    background: -ms-linear-gradient(top, #D6F0F1, #CAE6E9)repeat scroll 0 0 #333;
+    background: -o-linear-gradient(top, #D6F0F1, #CAE6E9) repeat scroll 0 0 #333;
+    background: -webkit-linear-gradient(top, #D6F0F1, #CAE6E9);
+    background: linear-gradient(top, #D6F0F1, #CAE6E9);
+
+}
+#classes .classes_box a {color: #4F6B72; text-decoration:none;display: block; padding:15px; font: bold 11px "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;text-transform: uppercase;}
+#classes .classes_box a:hover, .classes_boxa:active, .classes_box a:focus {background-color: transparent; color: #999999}
+#classes .classes_box p {color:#B36B00}
+
+/* soc */
+#socselect .socinput table { margin: 0 auto; width: 500px}
+#socselect .titleselect{ font: italic 20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; color:#999999;width: 100%;margin-bottom:20px}
+#socselect td ,#socselect tr {border:0; padding: 5px}
+#socselect label { float: left; padding:5px 15px 0 0;}
+#socselect select { float: left;
+ background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+ padding: 3px;
+ margin-right: 20px;
+ font:  11px Verdana, Arial, Helvetica, sans-serif;
+ border: 1px solid #ccc;
+ overflow: hidden; 
+ width: 150px;
+}
+#socselect button { float: left; 
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    border: 1px solid #ccc;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3px 12px ;cursor: pointer;
+    background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+}
+
+/* soclist */
+#soc .headtab { 
+padding: 0 0 5px 0;
+width: 700px;	 
+font: italic 20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+text-align:left;
+color:#999999;
+margin: 5px; 
+}
+#soc td , #soc tr {border: 0px}
+#soc td a {text-decoration:none;}
+#soc table {
+	width: 700px;
+	padding: 0;
+	margin: 0;
+        margin-bottom: 20px;
+}
+
+#soc caption {
+	padding: 0 0 5px 0;
+	width: 700px;	 
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+#soc th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+}
+
+#soc th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}
+
+#soc td {
+        font-size: 13px;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+
+
+#soc td.alt {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+#soc th.spec {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(../images/bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#soc th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(../images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
+
+
+/* sot */
+#sotselect .socinput table { margin: 0 auto; width: 500px}
+#sotselect .titleselect{ font: italic 20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; color:#999999;width: 100%;margin-bottom:20px}
+#sotselect td ,#sotselect tr {border:0; padding: 5px}
+#sotselect label { float: left; padding:5px 15px 0 0;}
+#sotselect select { float: left;
+ background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+ padding: 3px;
+ margin-right: 20px;
+ font:  11px Verdana, Arial, Helvetica, sans-serif;
+ border: 1px solid #ccc;
+ overflow: hidden; 
+ width: 150px;
+}
+#sotselect button { float: left; 
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    border: 1px solid #ccc;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3px 12px ;cursor: pointer;
+    background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+}
+
+/* sotlist */
+#sot .headtab { 
+padding: 0 0 5px 0;
+width: 700px;	 
+font: italic 20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+text-align:left;
+color:#999999;
+margin: 5px; 
+}
+#sot td , #sot tr {border: 0px}
+#sot td a {text-decoration:none;}
+#sot table {
+	width: 700px;
+	padding: 0;
+	margin: 0;
+        margin-bottom: 20px;
+}
+
+#sot caption {
+	padding: 0 0 5px 0;
+	width: 700px;	 
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+#sot th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+}
+
+#sot th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}
+
+#sot td {
+        font-size: 13px;
+       	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+
+
+#sot td.alt {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+#sot th.spec {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(../images/bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#sot th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(../images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
+
+/* module dayschool */
+#dayschool { min-height: 100px; margin: 10px 0; width: 100%}
+#dayschool #mybutton {padding:2px; margin:0; background: #CAE8EA url(../images/bg_header.jpg) no-repeat; cursor: pointer;border: 1px solid #C1DAD7; text-align: center}
+#dayschool  select {width: 100%; padding:0; margin:0; background-color: #f5fafa;}
+#dayschool .line {margin:0; padding:0;width:100%;}
+#dayschool div.d1 {width:50%; overflow: hidden; float:left; padding:0; margin:0;}
+#dayschool div.d2 {width:50%; overflow: hidden; float:left; padding:0; margin:0; text-align:right}
+#dayschool div.d3 {width:100%; padding:2px 0; margin:5px 0;}
+#dayschool .emptyd {width:100%; background-color: #cc3333; color:#FFF; padding:15px 0;text-align:center; margin:0; border: 1px solid #C1DAD7}
+#dayschool table#tdata {width: 100%; margin:15px 0; border:0;}
+#dayschool table#tdata tr {border:0;}
+
+#dayschool table#tdata th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+}
+
+#dayschool table#tdata td {
+        font-size: 11px;
+       	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background-color: #f5fafa;
+	padding: 6px;
+	color: #4f6b72;
+}
+#dayschool table#tdata th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}

@@ -57,6 +57,9 @@
         <copy todir="${builddir}/${NAME}/admin" overwrite="true" verbose="${verbose}">
             <fileset dir="${source}/administrator/components/${NAME}"/>
         </copy>
+         <copy todir="${builddir}/${NAME}/media" overwrite="true" verbose="${verbose}"  failonerror="false">
+            <fileset dir="${source}/media/${NAME}"/>
+         </copy>
         <copy todir="${builddir}/${NAME}/admin/language" overwrite="true" verbose="${verbose}" flatten="true">
             <fileset dir="${source}/administrator/language">
                 <exclude name="overrides/*"/>
