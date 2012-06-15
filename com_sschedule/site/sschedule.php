@@ -18,7 +18,7 @@ jimport('joomla.application.component.controller');
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::base() . 'media/com_sschedule/css/style.css');
 
-// Get an instance of the controller prefixed by HelloWorld
+// Get an instance of the controller 
 $controller = JController::getInstance('Sschedule');
 
 // Perform the Request task

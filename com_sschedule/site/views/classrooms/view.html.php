@@ -24,8 +24,9 @@ class SscheduleViewClassrooms extends JView {
         // Assign data to the view
         $this->items = $this->get('Items');
         $this->params = JFactory::getApplication()->getParams();
-
-
+         
+       // print_r(get_parent_class(__CLASS__));
+      
         // Check for errors.
         if (count($errors = $this->get('Errors'))) {
             JError::raiseError(500, implode('<br />', $errors));
