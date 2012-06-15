@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="1.7.0" method="upgrade">
-    <name>COM_SSHEDULE</name>
+    <name>COM_SSCHEDULE</name>
     <creationDate>November 2011</creationDate>
     <author>Klich Jarosław</author>
     <authorEmail>Jarek.koko+Sschedule@gmail.com</authorEmail>
