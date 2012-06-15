@@ -248,7 +248,7 @@ margin: 5px;
 }
 
 /* module dayschool */
-#dayschool { min-height: 100px; margin: 10px 0; width: 100%}
+#dayschool { min-height: 100px; margin: 10px 0;}
 #dayschool #mybutton {padding:2px; margin:0; background: #CAE8EA url(../images/bg_header.jpg) no-repeat; cursor: pointer;border: 1px solid #C1DAD7; text-align: center}
 #dayschool  select {width: 100%; padding:0; margin:0; background-color: #f5fafa;}
 #dayschool .line {margin:0; padding:0;width:100%;}
@@ -258,6 +258,8 @@ margin: 5px;
 #dayschool .emptyd {width:100%; background-color: #cc3333; color:#FFF; padding:15px 0;text-align:center; margin:0; border: 1px solid #C1DAD7}
 #dayschool table#tdata {width: 100%; margin:15px 0; border:0;}
 #dayschool table#tdata tr {border:0;}
+#dayschool .clr {display: none;}
+#dayschool #daycontent {padding:2px 0px}
 
 #dayschool table#tdata th {
 	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
