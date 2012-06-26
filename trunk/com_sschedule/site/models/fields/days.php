@@ -8,7 +8,7 @@
  * @copyright Copyright (C) Klich Jarosław
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
-defined('JPATH_BASE') or die;
+defined('_JEXEC') or die;
 
 jimport('joomla.form.helper');
 JFormHelper::loadFieldClass('list');
