@@ -52,7 +52,7 @@ class com_sscheduleInstallerScript {
     function preflight($type, $parent) {
         // $parent is the class calling this method
         // $type is the type of change (install, update or discover_install)
-        echo '<p>' . JText::_('COM_SSCHEDULE_PREFLIGHT_' . $type . '_TEXT') . '</p>';
+      //  echo '<p>' . JText::_('COM_SSCHEDULE_PREFLIGHT_' . $type . '_TEXT') . '</p>';
     }
 
     /**
@@ -63,7 +63,7 @@ class com_sscheduleInstallerScript {
     function postflight($type, $parent) {
         // $parent is the class calling this method
         // $type is the type of change (install, update or discover_install)
-        echo '<p>' . JText::_('COM_SSCHEDULE_POSTFLIGHT_' . $type . '_TEXT') . '</p>';
+       // echo '<p>' . JText::_('COM_SSCHEDULE_POSTFLIGHT_' . $type . '_TEXT') . '</p>';
     }
 
 }

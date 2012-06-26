@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="1.7.0" method="upgrade">
     <name>COM_SSCHEDULE</name>
-    <creationDate>November 2011</creationDate>
+    <creationDate>May 2012</creationDate>
     <author>Klich Jarosław</author>
     <authorEmail>Jarek.koko+Sschedule@gmail.com</authorEmail>
     <authorUrl>http://jarek.yum.pl</authorUrl>
@@ -20,11 +20,6 @@
             <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
         </sql>
     </uninstall>
-    <update> <!-- Runs on update; New in 1.6 -->
-        <schemas>
-            <schemapath type="mysql">sql/updates/mysql</schemapath>
-        </schemas>
-    </update>
 	<!-- Site Main File Copy Section -->
     <files folder="site">
         <filename>index.html</filename>
