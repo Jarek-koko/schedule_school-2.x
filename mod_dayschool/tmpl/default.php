@@ -1,3 +1,15 @@
+<?php
+/*
+ * @package Joomla 1.7
+ * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
+ * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+ *
+ * @module dayschool
+ * @copyright Copyright (C) Klich Jarosław
+ * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
+ */
+defined('_JEXEC') or die;
+?>
 <script type="text/javascript">
     //<![CDATA[
     jQuery(document).ready(function() {
