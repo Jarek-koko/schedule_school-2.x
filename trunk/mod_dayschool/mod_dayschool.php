@@ -22,7 +22,6 @@ if (!ExploreJQuery::already_loaded()) {
 	$document->addScript(JURI::base() . 'media/com_sschedule/js/jquery-noconflict.js');
 }
 
-$document->addScript(JURI::base() . 'media/com_sschedule/js/jquery.cookie.js');
 $document->addStyleSheet(JURI::base() . 'media/com_sschedule/css/style.css');
 
 $list = modDayschoolHelper::getList($params);

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * @package Joomla 1.7
  * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
@@ -10,28 +9,28 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 defined('_JEXEC') or die('Restricted access');
+abstract class SscheduleHelper
+{
 
-abstract class SscheduleHelper {
-
-   
-    public static function getActions() {
+    public static function getActions()
+    {
         $user = JFactory::getUser();
         $result = new JObject;
 
         $assetName = 'com_sschedule';
-
-        $actions = array(
-            'core.admin', 'core.manage', 'core.create', 'core.edit', 'core.edit.own', 'core.edit.state', 'core.delete'
-        );
-
+     
+        $actions = JAccess::getActionsFromFile( JPATH_ADMINISTRATOR.'/components/com_sschedule/access.xml',"/access/section[@name='component']/");
+        
         foreach ($actions as $action) {
-            $result->set($action, $user->authorise($action, $assetName));
+            $result->set($action->name, $user->authorise($action->name, $assetName));
         }
 
         return $result;
+        
     }
 
-    public static function addSubmenu($view = null) {
+    public static function addSubmenu($view = null)
+    {
         JSubMenuHelper::addEntry(JText::_('COM_SSCHEDULE_INFO'), 'index.php?option=com_sschedule', ("info" === $view));
         JSubMenuHelper::addEntry(JText::_('COM_SSCHEDULE_CLASSES'), 'index.php?option=com_sschedule&view=classes', ("classes" === $view));
         JSubMenuHelper::addEntry(JText::_('COM_SSCHEDULE_CLASSROOMS'), 'index.php?option=com_sschedule&view=classrooms', ("classrooms" === $view));
