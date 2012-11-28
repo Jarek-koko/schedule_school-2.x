@@ -48,7 +48,7 @@ class SscheduleModelScwt extends JModelList {
 
         $params = $this->getState('params');
                
-        if($params->get('order_num', 0)){
+       if($params->get('order_num', 0) == 0){
            $query->order('l.day ,b.name' );
         } else {
            $query->order('l.day ,b.ordering');
