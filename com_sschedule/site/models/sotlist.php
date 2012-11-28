@@ -50,7 +50,7 @@ class SscheduleModelSotlist extends JModelList {
         $dayid = $this->getState('sschedule.dayid');
         $params = $this->getState('params');
                
-        if($params->get('order_num', 0)){
+        if($params->get('order_num', 0) == 0){
            $query->order('b.name');
         } else {
            $query->order('b.ordering');

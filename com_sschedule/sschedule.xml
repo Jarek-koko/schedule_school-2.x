@@ -7,7 +7,7 @@
     <authorUrl>http://jarek.yum.pl</authorUrl>
     <copyright>Klich Jarosław</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-    <version>0.0.95</version>
+    <version>0.0.96</version>
     <description>Schedule School</description>
     <scriptfile>script.php</scriptfile>
     <install> <!-- Runs on install -->

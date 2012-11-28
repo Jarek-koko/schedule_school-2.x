@@ -1,5 +1,4 @@
 <?php
-
 /*
  * @package Joomla 1.7
  * @copyright Copyright (C) 2005 Open Source Matters. All rights reserved.
@@ -12,18 +11,19 @@
 defined('_JEXEC') or die;
 
 jimport('joomla.application.component.modellist');
+class SscheduleModelScw extends JModelList
+{
 
-class SscheduleModelScw extends JModelList {
-
-    public function getListQuery() {
+    public function getListQuery()
+    {
 
         $query = parent::getListQuery();
 
         // Select some fields
         $query->select('l.id, l.teacherid, l.lessonid, l.classid, l.day, ' .
-                'l.timeid, l.published, l.modified , l.classroomid ,l.checked_out_time, l.checked_out'
+            'l.timeid, l.published, l.modified , l.classroomid ,l.checked_out_time, l.checked_out'
         );
-        
+
         $query->from('#__sschedule AS l');
 
         // Join over the class
@@ -47,26 +47,27 @@ class SscheduleModelScw extends JModelList {
         $query->join('LEFT', '`#__sschedule_classrooms` AS cl ON cl.id = l.classroomid');
 
         $params = $this->getState('params');
-               
-        if($params->get('order_num', 0)){
-           $query->order('l.day ,b.name' );
+
+        if ($params->get('order_num', 0) == 0) {
+            $query->order('l.day ,b.name');
         } else {
-           $query->order('l.day ,b.ordering');
+            $query->order('l.day ,b.ordering');
         }
-       
+
         if ($params->get('classid', 0)) {
-            $query->where('l.classid = '. $params->get('classid'));
+            $query->where('l.classid = ' . $params->get('classid'));
         }
-        
+
         return $query;
     }
- 
-    protected function populateState($ordering = null, $direction = null) {
+
+    protected function populateState($ordering = null, $direction = null)
+    {
 
         $app = JFactory::getApplication();
-        
+
         $params = $app->getParams();
-        
+
         $this->setState('params', $params);
     }
 
