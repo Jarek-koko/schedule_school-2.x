@@ -80,7 +80,7 @@ echo  $this->state->get('filter.published');
                        <?php echo JHtml::_('grid.id', $i, $item->id); ?>
                     </td>
                     <td class="center"><?php echo $item->id; ?></td>
-                    <td class="center"><a href="<?php echo JRoute::_('index.php?option=com_sschedule&task=time.edit&id=' . (int) $item->id); ?>"><?php echo $this->escape($item->time); ?></a></td>
+                    <td class="center"><a href="<?php echo JRoute::_('index.php?option=com_sschedule&task=time.edit&id=' . (int) $item->timeid); ?>"><?php echo $this->escape($item->time); ?></a></td>
                     <td class="center"><?php echo SscheduleHelperDay::getDayText($item->day); ?></td>
                     <td class="center"><a href="<?php echo JRoute::_('index.php?option=com_sschedule&task=classroom.edit&id=' . (int) $item->classroomid); ?>"><?php echo $this->escape($item->classroom); ?></a></td>
                     <td class="center"><a href="<?php echo JRoute::_('index.php?option=com_sschedule&task=teacher.edit&id=' . (int) $item->teacherid); ?>"><?php echo $this->escape($item->teacher); ?></a></td>
