@@ -95,7 +95,7 @@ defined('_JEXEC') or die;
             });
         }
         jQuery("#daycontent").hide();   
-        jQuery.getJSON('../index.php', {
+        jQuery.getJSON('<?php echo JURI::base();?>index.php', {
             option: "com_sschedule",
             view: "soclist",
             tmpl: "component",
