@@ -53,7 +53,8 @@ class SscheduleModelScw extends JModelList
         } else {
             $query->order('l.day ,b.ordering');
         }
-
+        $query->where('l.published = 1');
+        
         if ($params->get('classid', 0)) {
             $query->where('l.classid = ' . $params->get('classid'));
         }
