@@ -56,6 +56,8 @@ class SscheduleModelSotlist extends JModelList {
            $query->order('b.ordering');
         }
        
+        $query->where('l.published = 1');
+        
         if (is_numeric($teacherid)) {
             $query->where('l.teacherid = ' . (int) $teacherid);
         }

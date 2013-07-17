@@ -55,7 +55,9 @@ class SscheduleModelSoclist extends JModelList
         } else {
             $query->order('b.ordering');
         }
-
+        
+        $query->where('l.published = 1');
+        
         if (is_numeric($classid)) {
             $query->where('l.classid = ' . (int) $classid);
         }
